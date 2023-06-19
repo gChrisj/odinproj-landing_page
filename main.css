@@ -8,13 +8,17 @@ body{
 }
 
 .main_container{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*Top Section*/
 .top_section{
     background: #1F2937;
     margin: 0 250px 0 250px;
+    flex: 1;
 }
 
 .header_box{
@@ -80,22 +84,108 @@ ul,a,li{
 /*Info Section*/
 
 .info_section{
-    background: wheat;
-    height: 500px; 
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 300px 100px 300px;
+    margin: 0;
+    flex: 1;
 }
 
+.random_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_section h1{
+    padding: 20px;
+}
+
+.random_box{
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.random_box img {
+    width: 150px;
+    height: 150px;
+}
+
+.random_box p{
+    width: 150px;
+}
+
+/*Testimonial Section*/
+
 .testimonial_section{
-    background: grey;
-    height: 500px; 
+    background-color: #E5E7EB;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote{
+  padding: 0 330px 0 330px;
+  
+}
+
+.quote p{
+    font-style: italic;
+    color: #1F2937;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.quote_author{
+    padding: 0;
+    margin: -50px;
+    font-size: 18px;
+    width: 40vw;
+    text-align: right;
 }
 
 .cta_section{
     background: white;
-    height: 500px; 
+    flex: 1;
+    padding: 100px 400px 100px 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.cta_text{
+    background: #3882F6;
+    color: white;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 100px 20px 100px;
+    border-radius: 15px;
+}
+.cta_text button{
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
 }
 
 .footer_section{
     background: #1F2937;
-    height: 500px; 
+    padding: 10px;
+    color: white; 
 }
 
